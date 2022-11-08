@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
+    maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+
+    <!-- /Подключение стилей -->
+    <link rel="stylesheet" href="Source/CSS/style.css">
+    <link rel="stylesheet" href="Source/CSS/icomoon.css">
+
+    <script defer src="./Source/js/cart.js"></script>
+
+    <style>
+        #basket > div:nth-child(2n) {
+            background-color: #DEE2E6FF;
+        }
+
+        #basket > div:nth-child(2n+1) {
+            background-color: #E9ECEFFF;
+            /*Если вы указать #basket div, то стиль будет применен ко всем div внутри #basket, независимо от степени вложенности.
+            А если  #basket > div, то стиль будет применен, только к "прямым" дочерним элементам "первой степени вложенности"*/
+
+        }
+
+        #sum > div:first-child {
+            /*background-color: #b1d2c1;*/
+            /*background-color: #cbd5d5;*/
+
+            background-color: #ded3f1
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper-min">
+    <div id="basket"></div>
+    <div id="full-sum"></div>
+    <div id="sum"></div>
+</div>
+
+</body>
